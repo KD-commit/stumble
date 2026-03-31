@@ -119,7 +119,7 @@ export default function QuizPage() {
     await finish(newAnswers)
   }
 
-  async function finish(finalAnswers: Record<number, string>) {
+  async function finish(_finalAnswers: Record<number, string>) {
     setSaving(true)
     // Mark quiz complete on user profile
     const supabase = createClient()

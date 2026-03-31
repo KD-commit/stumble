@@ -16,7 +16,7 @@ interface Match {
   profiles: Profile[]
 }
 
-export default function MatchesClient({ matches, userId }: { matches: Match[]; userId: string }) {
+export default function MatchesClient({ matches }: { matches: Match[] }) {
   const hasMatches = matches.length > 0
 
   return (
